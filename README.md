@@ -1,10 +1,8 @@
-# django-erp
-this application developed as open source to extends all voulanteer  developer , to complete with that software to available and too interesting for the end user.
-the goal of this software is create Enterprise resouce planning for information management system, in any company from all companies.
-one of the most applcations should be developed and optimized , based on users experiance such as :
-1. purchase
-2. sale 
-3.Inventory
-4.accounting
-5.human resource 
-6.customer relation management 
+# erp_webapp
+ERP web application is an integrated business management web application which includes critical business processes like Inventory management, stock allocation, procurement etc. Built in Django using Django-RestFramework
+
+## WEB APP LIVE AT 
+URL: https://djerp.herokuapp.com/ \
+ID: guest\
+PASSWORD: guest\
+Deployed partially on Heroku free dynos. Website may take couple of extra seconds to load the first time. works faster then on.
