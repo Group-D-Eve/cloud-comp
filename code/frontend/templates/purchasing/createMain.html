@@ -73,7 +73,7 @@
                                             <option value="" disabled selected hidden></option>
     
                                             {%for obj in parts%}
-                                            <option value='{{obj.url}}'>{{obj.name}}</option>
+                                            <option value={{obj.url}}>{{obj.name}}</option>
                                             {%endfor%}
                                         </select>
     
@@ -82,7 +82,7 @@
                                         <input type="number" name="quantity">
                                     </td>
                                     <td id="del" style="display: none;">
-                                        <img src="{%static 'purchasing/red_minus.png'%}" alt="" width="30px"  onclick="delRow()" style="cursor:pointer ;">
+                                        <img src={%static 'purchasing/red_minus.png'%} alt="" width="30px"  onclick="delRow()" style="cursor:pointer ;">
                                     </td>
                                 </tr>
                             </tbody>
@@ -112,7 +112,7 @@
                     
                     <tr class="orderLink" onclick="updateOrder('{{order.id}}')" style="cursor:pointer; ">
                         <td>{{order.id}}
-                            <a href="{%url 'frontend:purchasingUpdate' order.id %}" id="link_{{order.id}}" ></a>
+                            <a href={%url 'frontend:purchasingUpdate' order.id %} id="link_{{order.id}}" ></a>
                         </td>
                         <td>{{order.poNumber}}</td>
                         <td>{{order.partName}}</td>
